@@ -27,7 +27,10 @@ class User:
         on_hold_expire_duration = 0,
         sub_updated_at = 0,
         online_at = 0,
-        sub_last_user_agent:str = ""
+        sub_last_user_agent:str = "",
+        auto_delete_in_days: int = None,
+        admin: dict = None,
+        methods = None
     ):
         self.username = username
         self.proxies = proxies
