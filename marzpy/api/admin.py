@@ -22,9 +22,9 @@ class Admin:
                 result = await response.json()
                 result["panel_address"] = self.panel_address
                 return result
-        except aiohttp.exceptions.RequestException as ex:
-            print(f"Request Exception: {ex}")
-            return None
+        # except aiohttp.exceptions.RequestException as ex:
+        #     print(f"Request Exception: {ex}")
+        #     return None
         except json.JSONDecodeError as ex:
             print(f"JSON Decode Error: {ex}")
             return None
